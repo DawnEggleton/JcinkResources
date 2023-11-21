@@ -1,0 +1,30 @@
+<script type='text/javascript' src='https://files.jcink.net/html/jquery-1.7.2.min.js'></script>
+<script type='text/javascript' src='https://files.jcink.net/html/jquery.cookie-1.3.1.js'></script> 
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+<div class="ml--menu" data-type="flex">
+    <input class="type-search forminput memberlist-namesearch" type="text" size="25" name="name" value="" placeholder="Filter by name..."><br>
+    <b>Members</b>
+    <div class="filter-group member-list" data-filter-group="member">
+        <label class="all is-checked"><input type="checkbox" class="all" value="" checked="">all members</label>
+    </div>
+    <b>Group</b>
+    <div class="filter-group" data-filter-group="group">
+        <label class="all is-checked"><input type="checkbox" class="all" value="" checked="">all groups</label>
+        <label><input type="checkbox" value=".g-3">members</label>
+        <label><input type="checkbox" value=".g-4">admin</label>
+        <label><input type="checkbox" value=".g-5">banned</label>
+        <label><input type="checkbox" value=".g-1">validating</label>
+    </div>
+    <b>Sort</b>
+    <div class="sort-button-set" data-type="flex">
+        <button type="button" class="sort-button" data-sort="name">Name</button>
+        <button type="button" class="sort-button" data-sort="posts">Posts</button>
+    </div>
+</div>
+<div class="isotope-container"><div class="grid-sizer"></div></div>
+
+<script src="./functions.js"></script>
+<script src="./variables.js"></script>
+<script src="./tempMemberListRows.js"></script>
+<script src="./scripts.js"></script>
